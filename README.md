@@ -16,3 +16,4 @@ yarn run dev
 ```
 
 Read more about React InstantSearch [in our documentation](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/react/).
+# discord-slack-bot-convex-search
