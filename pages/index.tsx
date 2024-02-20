@@ -10,6 +10,9 @@ import { createInstantSearchRouterNext } from 'react-instantsearch-router-nextjs
 import { Avatar, AvatarFallback, AvatarImage } from "../@/components/ui/avatar"
 import { Panel } from '../components/Panel';
 const client = algoliasearch('5JJ918ZR72', '3386d55e39a56cac0e99ffb161b8c1a2');
+import '../styles/globals.css';
+import 'instantsearch.css/themes/satellite-min.css';
+
 
 type Message = {
   author: {
@@ -36,7 +39,7 @@ function Hit({ hit }: HitProps) {
   return (
     <>
     <Avatar>
-      <Highlight className="h-22" hit={hit} attribute="name" />
+      <Highlight className="h-22" hit={hit} attribute="objectID" />
       <a href={`https://discord.com/channels/1206282035904385124/1208419816881266698/threads/${hit.objectID}`}>
         <div className="text-xs text-slate-700 font-bold">{hit.title}</div>
         <div className="grid grid-cols-1 gap-1 text-slate-500 bg-slate-200 p-1 rounded text-xs"> {/* Define a grid with 2 columns */}
